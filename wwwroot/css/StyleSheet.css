@@ -1,0 +1,80 @@
+﻿
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top:200px;
+}
+
+    .texto h1 {
+        font-size: 3rem;
+        line-height: 1;
+        color: #fff;
+        width: 100%;
+        max-width: 550px;
+    }
+
+        .texto h1 span{
+            color:#d79c0a;
+        }
+
+    .texto p {
+        font-size: 1.2rem;
+        color: #fff;
+        width: 100%;
+        max-width: 550px;
+        margin: 20px 0;
+    }
+
+    .texto button {
+        width: 15%;
+        padding: 16px 0px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background: #d79c0a;
+        cursor: pointer;
+        margin-bottom: 20px;
+        color: #000;
+        position: relative;
+    }
+
+        .texto button:hover {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #CD7F32;
+            cursor: pointer;
+        }
+
+body {
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+img.circulo {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    animation: girandoCirculo 10s linear infinite
+}
+
+
+@keyframes girandoCirculo{
+
+    0%{
+        transform: rotate(0deg)
+    }
+
+    100%{
+        transform: rotate(360deg)
+    }
+
+}
+
